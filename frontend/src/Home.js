@@ -15,7 +15,6 @@ const Home = () => {
     designation: "",
     salary: "",
     email: "",
-    phone_No: "",
     Age: "",
     bloodgroup: "",
     native: "",
