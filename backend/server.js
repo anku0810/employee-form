@@ -35,9 +35,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit-form', (req, res) => {
-    const { id, name, id_number, department, dob, gender, designation, salary, email, phone_No, Age, bloodgroup , native} = req.body;
-    const sql = 'INSERT INTO employees (id, name, id_number, department, dob, gender, designation, salary, email, phone_No, Age, bloodgroup, native) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
-    const values = [id, name, id_number, department, dob, gender, designation, salary, email, phone_No,Age, bloodgroup, native];
+    const { id, name, id_number, department, dob, gender, designation, salary, email, Age, bloodgroup , native} = req.body;
+    const sql = 'INSERT INTO employees (id, name, id_number, department, dob, gender, designation, salary, email, Age, bloodgroup, native) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+    const values = [id, name, id_number, department, dob, gender, designation, salary, email,Age, bloodgroup, native];
     db.query(sql, values, (err, result) => {
         if (err) {
             console.log(err);

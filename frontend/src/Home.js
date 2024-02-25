@@ -209,18 +209,6 @@ const Home = () => {
               />
             </label>
             <label>
-              Phone:
-              <input
-                type="number"
-                name="phone"
-                placeholder="Enter Phone"
-                value={formData.phone_no}
-                onChange={handleChange}
-                className="input-field"
-                required
-              />
-            </label>
-            <label>
               Age:
               <input
                 type="number"
